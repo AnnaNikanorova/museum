@@ -1,0 +1,433 @@
+<!DOCTYPE html><html>
+    <head>
+    <title>AnnaNikanorova-museum</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js\skript.js"></script>
+    </head>
+    <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="res\depositphotos.jpg"> 
+                <div class="roboto-flex name-museum">Музей - Art Gallery</div>
+            </div>
+            <div class="div-nav roboto-flex">
+                <a href="aut.html">Войти</a>
+                <a href="#Rest">Исследования</a>
+                <a href="#Video">Видео</a>
+                <a href="#Gallery">Галерея</a>
+                <a href="#Contacts">Контакты</a>
+            </div>
+        </nav>
+        <div class="first-page">
+            
+            <div>
+                <br><br><br><br><h1 class="first-text">Добро пожаловать!</h1>
+                <p class="sec-text roboto-flex">Мир картин и скульптур</p>
+                <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m8!1e1!3m6!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fp%2FAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT%3Dw900-h600-k-no-pi16.599999999999994-ya322.8300064086914-ro0-fo100!7i5472!8i2736?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D" style="margin-left:0 ;">
+                <button class="roboto-flex first-button">Открой искусство для себя</button>
+                </a>
+            </div>  
+            <div class="image-wrapper">
+                <img src="res\866d167d547b76e4fd16e15cb7b1663eb01cc84e.jpg" alt="Мадонна" class="mad">
+            </div>
+        </div>  
+        <!--<div class="but-nav">
+            <div class="line">
+                <div class="page-indicator">01 | 05</div>
+                <div class="dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="arrows">
+               <span class="arrow">←</span>
+               <span class="arrow">→</span>
+            </div>
+        </div>-->
+    </header>
+    <main>
+        <h1 class="sec-page-text">Мероприятия и туры</h1>
+        <div class="sec-line">Rectangle</div>
+        <div class="part">
+            <a href="tours.html" class="block-link">
+               <img src="res\36942b233890104c0db31ef4c80c8e6e2e3ee65f.jpg" class="trip" alt="1">
+               <div class="big-text">Экскурсии</div>
+               <div class="smal-line">Rectangle</div>
+               <p class="roboto-flex color size-22">Будет моного интересного</p>
+            </a>
+            <a href="exhibitions.html" class="block-link">
+               <img src="res\3de623de32050fa80090e0a63606392752fe31cf.jpg" class="trip" alt="1">
+               <div class="big-text">Выставки</div>
+               <div class="smal-line">Rectangle</div>
+               <p class="roboto-flex color size-22">Успей посмотреть</p>
+            </a>
+            <a href="masterclasses.html" class="block-link">
+                <img src="res\6a3155e276a8f1ea05399aa663cadc34aa0ffbac.jpg" class="trip" alt="1">
+                <div class="big-text">Мастерклассы</div>
+                <div class="smal-line">Rectangle</div>
+                <p class="roboto-flex color size-22">Прикоснись к искусству сам</p>
+                
+                
+                
+                
+            </a>
+        </div>
+        <div class="part">
+            <a href="exhibits.html" class="block-link">
+               <img src="res\b0eb01938512c80cc65b72866dff12fbe904b43b.jpg" class="trip" alt="1">
+               <div class="big-text">Экспонаты</div>
+               <div class="smal-line">Rectangle</div>
+               <p class="roboto-flex color size-22">Узнайте о музейных фондах</p>
+            </a>
+            <a href="collections.html" class="block-link">
+                <img src="res\088e95d6816fa7da76dbac6d39bf3a1165fc4a9f.jpg" class="trip" alt="1">
+                <div class="big-text">Коллекции</div>
+                <div class="smal-line">Rectangle</div>
+                <p class="roboto-flex color size-22">Каждый зал имеет свою коллекцию</p>
+             </a>
+            <a href="guides.html" class="block-link">
+                <img src="res\2eda51d78b9029a01fd6eb9d1540c876a24ea817.jpg" class="trip" alt="1">
+                <div class="big-text">Экскурсоводы</div>
+                <div class="smal-line">Rectangle</div> 
+                <p class="roboto-flex color size-22">Выбери лучшего гида</p>
+            </a>
+        </div>
+    </main>
+    <article id="Rest">
+        <div class="part">
+        <div style="width:660px; margin-right: 60px;">
+            <h1 class="third-text">Реставрация</h1>
+            <div class="red-line"></div>
+            <p class="size-22 roboto-flex p-red-line">«Менины» — картина Диего Веласкеса, ведущего художника испанского Золотого века, написанная в 1656 году.</p>
+            <p class="size-22 roboto-flex p-red-line">В 1984 году её очистили от <span style="color:rgb(239, 233, 38)"> "жёлтого слоя пыли"</span> накопившегося после предыдущей реставрации в XIX веке.</p>
+            <p class="size-22 roboto-flex p-red-line">Очистка вызвала бурные протесты — не потому, что картина была как-то повреждена, а потому, что она выглядела иначе.</p>
+        </div>
+       
+        <div class="image-comparison">
+            <div class="before-image">
+                <img src="res\5cc7d498f99f3f8156f80a72bfb6eae885813085.jpg" alt="Explore">
+            </div>
+        <div class="after-image">
+            <img src="res\5cc7d498f99f3f8156f80a72bfb6eae885813085.jpg" alt="Explore">
+        </div>
+        <!--<div class="slider-handle">
+            <div class="slider-button"></div>
+        </div>-->
+    </div>
+        </div>
+    </article>
+    <section id="Video">
+        <div class="part">
+           <h1 class="sec-page-text">Видео-тревел</h1>
+           <div class="color smal-text roboto-flex">Art Gallery сотрудничает с самыми известными музеями мира. Вы можете увидеть копии таких шедевров, как «Мона Лиза» или «Кодекс Хаммурапи».</div>
+        </div>
+        
+        <div class="video-container">
+            <video class="big-video" controls src="res\louvre.mp4" poster="res\f00089fd43949a1332ea6150e413fd6a0a39f62d.jpg">
+            </video>
+            <div class="play-button" id="startBtn">▶</div>
+        </div>
+        
+        <div class="part">
+            <div class="video-overlay">
+                <video controls poster="res\695ffab01cc6a2a61b85d1637efaed76f0411de9.jpg"  src="res\Exposition.mp4" type="video/mp4"></video>
+                <div class="video-label">
+                    <div class="label-circle"><img src="res\depositphotos.jpg" style="height: 40px; width: 40px; border-radius: 100%;"></div>
+                    <div class="label-text">Выражение нашей культуры...</div>
+                </div>
+            </div>
+             <div class="video-overlay">
+                <video controls poster="res\d50e7166695839c4d37205c284fd03494bc86831.jpg" src="res\Au.mp4" type="video/mp4"></video>
+                <div class="video-label">
+                    <div class="label-circle"><img src="res\depositphotos.jpg" style="height: 40px; width: 40px; border-radius: 100%;"></div>
+                    <div class="label-text">Коллекции скульптурных залов...</div>
+                </div>
+            </div>
+            
+             <div class="video-overlay">
+                <video controls poster="res\e242ac8cf861b8fca23eab11d65f13fbdd4c71b4.jpg" src="res\Promenad.mp4" type="video/mp4"></video>
+                <div class="video-label">
+                    <div class="label-circle"><img src="res\depositphotos.jpg" style="height: 40px; width: 40px; border-radius: 100%;"></div>
+                    <div class="label-text">Иностранные гиды...</div>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <section id="Gallery">
+         <h1 class="third-text">Art Gallery</h1>
+         <div class="part">
+         <div class="vertical">
+            <img style="width: 456px;height: 570px; margin-right: 30px; margin-top: 80px;" src="res\25ff0ad95608456468e5a83c122a0185ca02d84a.jpg">
+            <img style="width: 456px;height: 570px; margin-right: 30px; margin-top: 20px;" src="res\7b484ff670c08dc0375b98be63cdfd45d02c0d2e.jpg">
+            <img style="width: 456px;height: 456px; margin-right: 30px; margin-top: 20px;" src="res\f480052b5f0640ef6a4849d66d87478b8b78fe33.jpg" alt="mad">
+            <img style="width: 456px;height: 570px; margin-left: 0px; margin-top: 20px;" src="res\2b78be0c7b10df6bd2c6bfbe960147f41de98c00.jpg">
+        </div>
+        <div class="vertical heier"> 
+            <img style="width: 456px;height: 456px; margin-top: 20px;" src="res\20954295ed3109e2ffb8141e98c0bced6d27f889.jpg">
+            <img style="width: 456px;height: 570px; margin-top: 20px;" src="res\55d78531220fd9354d67e7b853c6f1f547469bf8.jpg">
+            <img style="width: 456px;height: 570px; margin-top: 20px;" src="res\d85c3465ff44a5e6e34f2a8474f2e6523fd23abe.jpg">
+            <img style="width: 456px;height: 570px; margin-left: 0px; margin-top: 20px;" src="res\66499e34ca181769b2dbfe6a0205c066c612553a.jpg">
+        </div>
+        <div class="vertical">
+            <img style="width: 456px;height: 570px; margin-left: 30px; margin-top: 80px;" src="res\1f24969c8c633a8fdd3088a686a26998caa7e253.jpg">
+            <img style="width: 456px;height: 456px; margin-left: 30px; margin-top: 20px;" src="res\fe78b7aceef2124a70e9e98759010176610b3362.jpg">
+            <img style="width: 456px;height: 456px; margin-left: 30px; margin-top: 20px;" src="res\d43867e6a71332efb47250f01e11aad3313fa1a9.jpg">
+            <img style="width: 456px;height: 450px; margin-left: 30px; margin-top: 20px;" src="res\a2fc9231181e5970fba1fed4265eaa22e9e2ca70.jpg">
+        </div>
+        <div class="bottom-fade">
+            <button class="roboto-flex position first-button" onclick="window.location.href='collections.html'">Все произведения и коллекции</button>
+        </div>
+         </div>
+        
+    </section>
+    <!--<section id="Tickets">
+    <h1 class="sec-page-text">КУПИТЬ БИЛЕТ ДНЯ</h1>
+    <div class="sec-line"></div>
+    <div class="part">
+        <img style="width: 720px;height: 550px; padding-top: 60px;" src="res\4a9eab826f775ea411d6c323623ede977e4190d4.jpg">
+        
+        <div class="roboto-flex">
+            <p class="ticket" style="width: 495px;">Тип сопровождения</p>
+            
+            
+            <div class="radio-group">
+                <input type="radio" class="color roboto-flex size-22 radio" id="guide" name="accompaniment" value="guide" checked>
+                <label for="guide" class="color radio-text">Экскурсовод</label>
+            </div>
+            
+            <div class="radio-group">
+                <input type="radio" class="color roboto-flex size-22 radio" id="audio" name="accompaniment" value="audio">
+                <label for="audio" class="color radio-text">Аудиогид</label>
+            </div>
+            
+            <div class="radio-group">
+                <input type="radio" class="color roboto-flex size-22 radio" id="none" name="accompaniment" value="none">
+                <label for="none" class="color radio-text">Без сопровождения</label>
+            </div>
+            
+        </div>
+        
+        <div class="ticket-selection">
+            <p class="ticket" style="margin-left: 10px;">Возраст</p>
+            
+            <div class="age-group">
+                <label class="color radio-text">Базовый 18+</label>
+                <br>
+                <br>
+                <div class="counter-group">
+                    <div class="full-button">
+                        <button type="button" class="amount-decrease" data-type="adult">—</button>
+                        <input type="text" value="0" class="amount-display" data-type="adult" readonly>
+                        <button type="button" class="amount-increase" data-type="adult">+</button>
+                    </div>
+                    <span class="price" data-price="500">500 руб.</span>
+                </div>
+            </div>
+            
+            <div class="age-group">
+                <label class="color radio-text">Пенсионер 65+</label>
+                <br>
+                <br>
+                <div class="counter-group">
+                    <div class="full-button">
+                        <button type="button" class="amount-decrease" data-type="senior">—</button>
+                        <input type="text" value="0" class="amount-display" data-type="senior" readonly>
+                        <button type="button" class="amount-increase" data-type="senior">+</button>
+                    </div>
+                    <span class="price" data-price="300">300 руб.</span>
+                </div>
+            </div>
+            
+            <div class="total-section">
+                <p class="ticket" style="align-content: right; margin-left: 0px;">Сумма: <span id="totalPrice">0</span> руб.</p>
+                <button class="buy-button roboto-flex">Купить сейчас</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <img src="res\319d96b8f1e2b77f1032189f03e7ed0ce2f81cca.jpg" 
+     alt="Описание изображения"
+     class="responsive-image">-->
+<section id="Contacts">
+    <h1 class="sec-page-text">Контакты</h1>
+    <div class="sec-line"></div>
+    <div class="part">
+        <div>
+                <p class="ticket" style="margin-left: 0px; width: 290px; margin-bottom: 40px; margin-top: 100px;">Art Gallery в Минске</p><BR>
+         <p class="color radio-text" style="margin-top: 20px; width: 350px;">Aдрес: ул. Интернациональная, 29</p>
+         <p class="color radio-text" style="margin-top: 50px;"> Телефон: +375 (44) 400 50 50</p>
+         <p class="color radio-text" style="margin-top: 50px;">Почта: info@artgallery.by</p>
+            </div>
+            <div id="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A51dcba2451572a69aab0b6dbb5e2746e405f5d46d78ea45652769adee9aa52ba&amp;width=900&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+
+</section>
+    <footer>    
+        <div style="height: 100px; display: flex; padding-top: 100px;">
+            <div class="logo-end logo">
+                <img src="res\depositphotos.jpg"> <div class="roboto-flex" style="color: aliceblue; margin-left: 15px;">Музей - Art Gallery</div>
+            </div>
+            <div class="roboto-flex f-nav">
+                <div>
+                    <a href="">Посетить</a><br><br>
+                    <a href="#Explore">Исследования</a><br><br>
+                    <a href="#Video">Видео</a>
+                </div>
+                <div>
+                    <a href="#Gallery">Галерея</a><br><br>
+                    
+                    <a href="#Contacts">Контакты</a><br><br>
+                </div>
+                <div style="margin-left: 0px;">
+                    <a href="https://youtube.com/@annushka_with_bless?si=4E2Ihyt2SRhv4nrN" style="margin-right: -25px;"><img src="res/Youtube.png" alt="youtube"></a>
+                    <a href="https://www.instagram.com/grazhdanka_nikanorova?igsh=MWw2cW16Y2V5Z29oNQ%3D%3D&utm_source=qr" style="margin-right: -25px;"><img src="res\Instagram.png" alt="youtube"></a>
+                    <a href="https://www.facebook.com/museedulouvre" style="margin-right: -25px;"><img src="res\Facebook.png" alt="youtube"></a>
+                    <a href="http://twitter.com/museelouvre" style="margin-right: -25px;"><img src="res/Twitter.png" alt="youtube"></a>
+                    <a href="https://www.pinterest.fr/museedulouvre/" style="margin-right: -25px;"><img src="res\Pinterest.png" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="end-line"></div>
+        <div style="display: flex; font-size: 20px;" class="roboto-flex">
+        <div style=" display: flex; padding-top: 35px; padding-left: 250px;">© 2026</div>
+        <div style=" display: flex; padding-top: 35px; padding-left: 550px;">До скорых встреч!</div>
+        <div style=" display: flex; padding-top: 35px; padding-left: 530px;">Главная</div>
+        </div>
+    </footer>
+    </body>
+    <script>
+        // JavaScript для счетчиков и расчета суммы
+document.addEventListener('DOMContentLoaded', function() {
+    // Инициализация счетчиков
+    const counters = document.querySelectorAll('.full-button');
+    
+    counters.forEach(counter => {
+        const decreaseBtn = counter.querySelector('.amount-decrease');
+        const increaseBtn = counter.querySelector('.amount-increase');
+        const display = counter.querySelector('.amount-display');
+        const type = decreaseBtn.dataset.type;
+        
+        // Обработчик уменьшения
+        decreaseBtn.addEventListener('click', function() {
+            let value = parseInt(display.value);
+            if (value > 0) {
+                value--;
+                display.value = value;
+                updateTotal();
+            }
+            updateButtonStates();
+        });
+        
+        // Обработчик увеличения
+        increaseBtn.addEventListener('click', function() {
+            let value = parseInt(display.value);
+            value++;
+            display.value = value;
+            updateTotal();
+            updateButtonStates();
+        });
+    });
+    
+    // Функция обновления состояния кнопок
+    function updateButtonStates() {
+        document.querySelectorAll('.full-button').forEach(counter => {
+            const decreaseBtn = counter.querySelector('.amount-decrease');
+            const display = counter.querySelector('.amount-display');
+            const value = parseInt(display.value);
+            
+            decreaseBtn.disabled = value === 0;
+        });
+    }
+    
+    // Функция расчета общей суммы
+    function updateTotal() {
+        let totalAmount = 0;
+        let totalPrice = 0;
+        
+        // Считаем билеты и сумму
+        document.querySelectorAll('.age-group').forEach(group => {
+            const counter = group.querySelector('.amount-display');
+            const priceElement = group.querySelector('.price');
+            const price = parseInt(priceElement.dataset.price);
+            const quantity = parseInt(counter.value);
+            
+            totalAmount += quantity;
+            totalPrice += quantity * price;
+        });
+        
+        // Обновляем отображение
+        document.getElementById('totalAmount').textContent = totalAmount;
+        document.getElementById('totalPrice').textContent = totalPrice;
+        
+        // Обновляем состояние кнопки покупки
+        const buyButton = document.querySelector('.buy-button');
+        buyButton.disabled = totalAmount === 0;
+        if (totalAmount === 0) {
+            buyButton.style.opacity = '0.6';
+            buyButton.style.cursor = 'not-allowed';
+        } else {
+            buyButton.style.opacity = '1';
+            buyButton.style.cursor = 'pointer';
+        }
+    }
+    
+    // Обработчик для кнопки покупки
+    document.querySelector('.buy-button').addEventListener('click', function() {
+        const totalAmount = parseInt(document.getElementById('totalAmount').textContent);
+        const totalPrice = parseInt(document.getElementById('totalPrice').textContent);
+        
+        if (totalAmount > 0) {
+            // Получаем выбранный тип сопровождения
+            const selectedAccompaniment = document.querySelector('input[name="accompaniment"]:checked').value;
+            const accompanimentText = document.querySelector(`label[for="${selectedAccompaniment}"]`).textContent;
+            
+            // Собираем данные о билетах
+            const tickets = [];
+            document.querySelectorAll('.age-group').forEach(group => {
+                const label = group.querySelector('.radio-text').textContent;
+                const quantity = parseInt(group.querySelector('.amount-display').value);
+                const price = parseInt(group.querySelector('.price').dataset.price);
+                
+                if (quantity > 0) {
+                    tickets.push({
+                        type: label,
+                        quantity: quantity,
+                        price: price
+                    });
+                }
+            });
+            
+            // Здесь можно отправить данные на сервер или показать модальное окно
+            alert(`Покупка оформлена!\n\nТип сопровождения: ${accompanimentText}\nКоличество билетов: ${totalAmount}\nОбщая сумма: ${totalPrice} руб.`);
+            
+            // Сброс формы (опционально)
+            // resetForm();
+        }
+    });
+    
+    // Функция сброса формы (опционально)
+    function resetForm() {
+        document.querySelectorAll('.amount-display').forEach(display => {
+            display.value = '0';
+        });
+        updateTotal();
+        updateButtonStates();
+    }
+    
+    // Инициализация
+    updateButtonStates();
+    updateTotal();
+});
+    </script>
+</html>
